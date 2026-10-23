@@ -143,6 +143,8 @@ h2 { margin: 10px 0 0; font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 600;
 .footer-inner { display: flex; min-height: 75px; align-items: center; justify-content: space-between; gap: 20px; font: .55rem var(--mono); letter-spacing: .05em; }
 .footer-brand { color: #f4f3ed; font-family: var(--sans); font-size: .68rem; }
 .footer-brand .brand-mark { width: 29px; height: 29px; }
+.footer-views { display: flex; align-items: center; }
+.footer-views img { display: block; }
 .footer-inner > a:last-child { color: #bfc0b6; text-decoration: none; }
 
 @media (max-width: 800px) {

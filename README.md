@@ -24,6 +24,7 @@ Sou o **Felipe Alexandre** (conhecido na comunidade como **AgonisingBasher**). S
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
 * **Design & Prototipagem:** Figma, Canva
 * **Hospedagem:** GitHub Pages
+* **Contador de visualizações:** [Visitor Badge](https://visitor-badge.laobi.icu), com incremento a cada carregamento da página
 
 ---
 

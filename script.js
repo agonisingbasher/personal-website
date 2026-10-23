@@ -55,6 +55,7 @@ const translations = {
     connectTitle: "Uma ideia boa fica<br>melhor quando é compartilhada<span>.</span>",
     connectDescription: "Acompanhe os projetos, veja os bastidores ou simplesmente diga oi.",
     backToTop: "VOLTAR AO TOPO ↑",
+    pageViewsAlt: "Contador de visualizações da página; cada visita é contabilizada.",
     footerCredit: "FEITO COM CURIOSIDADE, POR FELIPE ALEXANDRE."
   },
   en: {
@@ -113,6 +114,7 @@ const translations = {
     connectTitle: "A good idea gets<br>better when it's shared<span>.</span>",
     connectDescription: "Follow the projects, get a look behind the scenes, or just say hello.",
     backToTop: "BACK TO TOP ↑",
+    pageViewsAlt: "Page view counter; each visit is counted.",
     footerCredit: "MADE WITH CURIOSITY BY FELIPE ALEXANDRE."
   }
 };
