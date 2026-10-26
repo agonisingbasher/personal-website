@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu site pessoal e portfólio profissional! Este espaço foi desenvolvido para reunir a minha trajetória, projetos de engenharia de software, inteligência artificial, design de interfaces e engenharia reversa.
 
-👉 **Acede ao site ao vivo:** [agonisingbasher.github.io](/url?sa=i&source=web&rct=j&url=https://agonisingbasher.github.io/personal-website/&ved=2ahUKEwiK9deaj9eXAxX6KLkGHZJCKSgQg5wReggIAggACAsQBw&opi=89978449&cd&psig=AOvVaw0qKxfVMsyaNClDvqLIuE58&ust=1793084709755000)
+👉 **Acede ao site ao vivo:** [agonisingbasher.github.io](https://agonisingbasher.github.io/personal-website/#inicio).
 
 ---
 
