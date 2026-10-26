@@ -16,6 +16,7 @@ Sou o **Felipe Alexandre** (conhecido na comunidade como **AgonisingBasher**). S
 
 * **[Stardew Valley - Wii U Edition](https://agonisingbasher.github.io/stardew-valley-wiiu/index.html):** Projeto de engenharia reversa e conceito de interface adaptada para o GamePad do Wii U, com integração de tela dupla e mapa em tempo real.
 * **[FNAF 2 - Nintendo DSi Reverse Engineering](https://agonisingbasher.github.io/FNAF2-DSi-Reverse-Engineering/index.html):** Otimização e recriação de Five Nights at Freddy's 2 para o hardware do Nintendo DSi XL.
+* **[CCB PG](./ccb-pg.html):** Apresentação pública das funcionalidades e dos pontos em acompanhamento, sem dados pessoais ou detalhes internos.
 
 ---
 
