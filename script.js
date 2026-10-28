@@ -82,14 +82,14 @@ const translations = {
     feedbackSubmit: "Enviar feedback",
     feedbackPrivacy: "O envio usa um serviço externo de formulários e é encaminhado por e-mail ao desenvolvedor. Não envie senhas, dados pessoais sensíveis ou arquivos privados.",
     ootCardImageLabel: "Conheça o projeto Ocarina of Time para Nintendo DSi",
-    ootCardImageTag: "PESQUISA & DESENVOLVIMENTO",
+    ootCardImageAlt: "Arte conceitual gerada por IA: Link com escudo e espada ao lado de um Nintendo DSi que exibe a Triforce, com o título Ocarina of Time. Não é uma captura do jogo em execução",
+    ootCardImageTag: "ARTE CONCEITUAL · IA",
     ootCardMeta: "03 — PESQUISA E DESENVOLVIMENTO",
     ootCardStatus: "EM DESENVOLVIMENTO",
     ootCardSubtitle: "para Nintendo DSi",
     ootCardDescription: "Uma investigação técnica para adaptar Ocarina of Time ao Nintendo DSi, com tradução gráfica, gerenciamento de recursos e integração gradual dos sistemas do jogo.",
     ootCardTag: "Gráficos 3D",
     ootCardLink: "Explorar o projeto",
-    ootCardNote: "COMPOSIÇÃO TIPOGRÁFICA",
   },
   en: {
     title: "AgonisingBasher — code, curiosity & nostalgia",
@@ -174,14 +174,14 @@ const translations = {
     feedbackSubmit: "Send feedback",
     feedbackPrivacy: "Submissions go through an external form service and are forwarded by email to the developer. Do not send passwords, sensitive personal data, or private files.",
     ootCardImageLabel: "Explore the Ocarina of Time for Nintendo DSi project",
-    ootCardImageTag: "RESEARCH & DEVELOPMENT",
+    ootCardImageAlt: "AI-generated concept art: Link with shield and sword beside a Nintendo DSi showing the Triforce, under the Ocarina of Time title. Not a capture of the game running",
+    ootCardImageTag: "CONCEPT ART · AI",
     ootCardMeta: "03 — RESEARCH AND DEVELOPMENT",
     ootCardStatus: "IN DEVELOPMENT",
     ootCardSubtitle: "for Nintendo DSi",
     ootCardDescription: "A technical investigation to adapt Ocarina of Time to the Nintendo DSi, with graphics translation, resource management, and gradual integration of the game's systems.",
     ootCardTag: "3D graphics",
     ootCardLink: "Explore the project",
-    ootCardNote: "TYPOGRAPHIC COMPOSITION",
   }
 };
 
