@@ -83,7 +83,7 @@ const translations = {
     feedbackPrivacy: "O envio usa um serviço externo de formulários e é encaminhado por e-mail ao desenvolvedor. Não envie senhas, dados pessoais sensíveis ou arquivos privados.",
     ootCardImageLabel: "Conheça o projeto Ocarina of Time para Nintendo DSi",
     ootCardImageAlt: "Arte conceitual gerada por IA: Link com escudo e espada ao lado de um Nintendo DSi que exibe a Triforce, com o título Ocarina of Time. Não é uma captura do jogo em execução",
-    ootCardImageTag: "ARTE CONCEITUAL · IA",
+    ootCardImageTag: "OTD-032 · FOREST TEMPLE",
     ootCardMeta: "03 — PESQUISA E DESENVOLVIMENTO",
     ootCardStatus: "EM DESENVOLVIMENTO",
     ootCardSubtitle: "para Nintendo DSi",
