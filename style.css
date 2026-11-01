@@ -135,6 +135,7 @@ h2 { margin: 10px 0 0; font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 600;
 .connect h2 { margin-top: 16px; font-size: clamp(2.25rem, 5.4vw, 4.2rem); }
 .connect h2 > span { color: var(--cyan); }
 .connect-copy { margin: 17px 0 31px; color: #a9aaa0; font-size: .9rem; }
+.connect-inner > .button { margin-bottom: 28px; }
 .social-links { border-top: 1px solid #ffffff2a; }
 .social-links a { display: flex; justify-content: space-between; gap: 20px; padding: 14px 2px; border-bottom: 1px solid #ffffff2a; color: #bdbeb5; font-size: .8rem; text-decoration: none; transition: color .2s ease, padding .2s ease; }
 .social-links a:hover { padding-inline: 7px; color: var(--cyan); }
