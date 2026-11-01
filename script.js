@@ -54,7 +54,7 @@ const translations = {
     connectEyebrow: "03 / CONTINUE POR AQUI",
     connectTitle: "Uma ideia boa fica<br>melhor quando é compartilhada<span>.</span>",
     connectDescription: "Acompanhe os projetos, veja os bastidores ou simplesmente diga oi.",
-    connectChannel: "Conhecer o site do canal",
+    connectChannel: "Site do canal",
     backToTop: "VOLTAR AO TOPO ↑",
     pageViewsAlt: "Contador de visualizações da página; cada visita é contabilizada.",
     footerCredit: "FEITO COM CURIOSIDADE, POR FELIPE ALEXANDRE.",
@@ -93,7 +93,7 @@ const translations = {
     ootCardLink: "Explorar o projeto",
   },
   en: {
-    connectChannel: "Explore the channel website",
+    connectChannel: "Channel website",
     title: "AgonisingBasher — code, curiosity & nostalgia",
     metaDescription: "Projects, experiments, and reverse engineering by Felipe Alexandre — AgonisingBasher.",
     navLabel: "Main navigation",
