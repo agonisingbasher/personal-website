@@ -29,6 +29,16 @@ Sou o **Felipe Alexandre** (conhecido na comunidade como **AgonisingBasher**). S
 
 ---
 
+## 🌍 Idioma
+
+O site fala quatro idiomas com dicionário escrito à mão — pt-BR, EN, ES e FR — e o seletor são os quatro botões `PT / EN / ES / FR` do cabeçalho (`script.js`). Não há link para o Google Translate: o que aparece em espanhol ou francês vem dos dicionários do próprio repositório, incluindo título da aba, meta description, `alt` das imagens e os rótulos do formulário de feedback.
+
+A ordem de decisão é `?lang=` > escolha salva no navegador (`localStorage`, chave `agonisingbasher-language`) > `navigator.languages` > pt-BR. Qualquer `pt-*` vira `pt-BR`, que é a única variante portuguesa traduzida aqui. Assim, quem abre de Buenos Aires já vê espanhol, quem abre de Paris já vê francês, e a escolha manual do visitante passa a vencer na visita seguinte. O idioma também volta para a URL (`?lang=`) e é repassado aos links marcados com `data-lang-link`.
+
+O mesmo motor serve o hub do canal (`personal-website-Twitch`), que usa chave própria (`agonisingbasher-twitch-language`) para que os dois sites, hospedados na mesma origem, não atropelhem a escolha um do outro.
+
+---
+
 ## 🔗 Redes & Contactos
 
 * **GitHub:** [@agonisingbasher](https://github.com/agonisingbasher)
