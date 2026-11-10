@@ -86,7 +86,7 @@ h1, h2, h3, p { margin-top: 0; }
 h2 { margin: 10px 0 0; font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 600; letter-spacing: -.06em; line-height: 1.1; }
 .heading-period { color: #229ac0; }
 .section-intro { max-width: 345px; margin: 0 0 5px; color: var(--muted); font-size: .9rem; }
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.project-grid { display: flex; flex-wrap: wrap; gap: 0; }
 .project-card { overflow: hidden; border: 1px solid var(--line); border-radius: 5px; background: #fbfdfd; }
 .project-image { position: relative; display: block; overflow: hidden; height: 250px; background: #252a20; }
 .project-image img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
@@ -220,7 +220,7 @@ h2 { margin: 10px 0 0; font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 600;
   .section-pad { padding: 73px 0; }
   .section-heading { display: block; margin-bottom: 25px; }
   .section-intro { margin-top: 13px; }
-  .project-grid { grid-template-columns: 1fr; gap: 15px; }
+  .project-grid { gap: 0; }
   .project-image { height: clamp(195px, 58vw, 270px); }
   .project-content > p { min-height: 0; }
   .next-project { padding: 14px 12px; font-size: .72rem; }
