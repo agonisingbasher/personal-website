@@ -1,48 +1,52 @@
-# 🌐 Felipe Alexandre — Personal Website & Portfolio
+# Felipe Alexandre — Portfólio Pessoal
 
-Bem-vindo ao repositório do meu site pessoal e portfólio profissional! Este espaço foi desenvolvido para reunir a minha trajetória, projetos de engenharia de software, inteligência artificial, design de interfaces e engenharia reversa.
+Bem-vindo ao repositório do meu portfólio pessoal e profissional. O site reúne minha apresentação, meus projetos de desenvolvimento e engenharia reversa, além de canais para contato e acompanhamento do meu trabalho.
 
-👉 **Acede ao site ao vivo:** [agonisingbasher.github.io](https://agonisingbasher.github.io/personal-website/#inicio).
+- **Aluno:** Felipe Alexandre
+- **Site publicado:** https://agonisingbasher.github.io/personal-website/
+- **Repositório:** https://github.com/agonisingbasher/personal-website
+
+## Sobre o portfólio
+
+O portfólio foi criado para apresentar minha trajetória como desenvolvedor independente, estudante e criador de conteúdo. A página inicial apresenta meu perfil, projetos em destaque e formas de contato.
+
+## Seções do site
+
+- **Perfil / Sobre mim:** apresentação pessoal, interesses e áreas de atuação.
+- **Projetos:** projetos de desenvolvimento e pesquisa, incluindo Stardew Valley para Wii U, FNAF 2 para Nintendo DSi e Ocarina of Time para Nintendo DSi.
+- **Contato:** links para GitHub, YouTube, LinkedIn e meu site de conteúdo.
+- **Navegação:** menu com links para as seções da própria página e controles para alternar o idioma.
+
+## Tecnologias utilizadas
+
+- HTML5 — estrutura e conteúdo das páginas.
+- CSS3 — identidade visual, animações, efeitos de interação e responsividade.
+- JavaScript (ES6+) — interações e sistema de tradução.
+- **Bootstrap 5.3.8** — framework CSS utilizado no layout responsivo da área de projetos, com sistema de linhas e colunas (row, g-4, col-12 e col-lg-6).
+- GitHub Pages — publicação e hospedagem do site.
+
+## Funcionamento do projeto
+
+A página principal é construída em HTML. Os estilos próprios ficam em style.css, enquanto as interações e traduções ficam em script.js.
+
+O Bootstrap é carregado pelo CDN no head, antes da folha de estilos própria. Na seção de projetos, as classes row, g-4, col-12 e col-lg-6 organizam os cartões em uma coluna em telas menores e em duas colunas em telas grandes. O CSS do projeto complementa o framework e preserva a identidade visual personalizada.
+
+## Recurso adicional: site multilíngue
+
+Além das seções e da navegação, o portfólio possui um sistema próprio de idiomas. O visitante pode escolher entre português brasileiro (pt-BR), inglês (EN), espanhol (ES) e francês (FR) pelos botões no cabeçalho.
+
+O idioma pode ser definido pelo parâmetro ?lang= na URL, por uma escolha salva no navegador ou pelas preferências de idioma do navegador. A escolha manual é armazenada em localStorage, permitindo que seja mantida em visitas posteriores.
+
+### Como o recurso foi implementado
+
+O recurso foi desenvolvido em JavaScript no arquivo script.js, utilizando dicionários de tradução para cada idioma. Os elementos da página que possuem o atributo data-i18n são atualizados com os textos correspondentes ao idioma selecionado. A preferência é salva com localStorage e o parâmetro lang da URL também é atualizado para permitir links que abram o site em um idioma específico.
+
+## Publicação
+
+O projeto é publicado pelo GitHub Pages:
+
+**https://agonisingbasher.github.io/personal-website/**
 
 ---
 
-## 🚀 Sobre Mim
-
-Sou o **Felipe Alexandre** (conhecido na comunidade como **AgonisingBasher**). Sou estudante de Tecnologia da Informação, Engenharia Civil e Desenvolvimento de Sistemas, com foco na criação de soluções inteligentes que combinam lógica técnica com excelente experiência de utilizador (UI/UX).
-
----
-
-## 🛠️ Projetos em Destaque no Site
-
-* **[Stardew Valley - Wii U Edition](https://agonisingbasher.github.io/stardew-valley-wiiu/index.html):** Projeto de engenharia reversa e conceito de interface adaptada para o GamePad do Wii U, com integração de tela dupla e mapa em tempo real.
-* **[FNAF 2 - Nintendo DSi Reverse Engineering](https://agonisingbasher.github.io/FNAF2-DSi-Reverse-Engineering/index.html):** Otimização e recriação de Five Nights at Freddy's 2 para o hardware do Nintendo DSi XL.
-* **[The Legend of Zelda: Ocarina of Time para Nintendo DSi](https://agonisingbasher.github.io/ocarina-of-time-dsi/):** Pesquisa e desenvolvimento de uma adaptação nativa experimental, com tradução de display lists F3DEX2 para o geometry engine do DS e integração gradual do jogo. Página própria no repositório do projeto.
-
----
-
-## 🧰 Tecnologias Utilizadas no Site
-
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
-* **Design & Prototipagem:** Figma, Canva
-* **Hospedagem:** GitHub Pages
-* **Contador de visualizações:** [Visitor Badge](https://visitor-badge.laobi.icu), com incremento a cada carregamento da página
-
----
-
-## 🌍 Idioma
-
-O site fala quatro idiomas com dicionário escrito à mão — pt-BR, EN, ES e FR — e o seletor são os quatro botões `PT / EN / ES / FR` do cabeçalho (`script.js`). Não há link para o Google Translate: o que aparece em espanhol ou francês vem dos dicionários do próprio repositório, incluindo título da aba, meta description, `alt` das imagens e os rótulos do formulário de feedback.
-
-A ordem de decisão é `?lang=` > escolha salva no navegador (`localStorage`, chave `agonisingbasher-language`) > `navigator.languages` > pt-BR. Qualquer `pt-*` vira `pt-BR`, que é a única variante portuguesa traduzida aqui. Assim, quem abre de Buenos Aires já vê espanhol, quem abre de Paris já vê francês, e a escolha manual do visitante passa a vencer na visita seguinte. O idioma também volta para a URL (`?lang=`) e é repassado aos links marcados com `data-lang-link`.
-
-O mesmo motor serve o hub do canal (`personal-website-Twitch`), que usa chave própria (`agonisingbasher-twitch-language`) para que os dois sites, hospedados na mesma origem, não atropelhem a escolha um do outro.
-
----
-
-## 🔗 Redes & Contactos
-
-* **GitHub:** [@agonisingbasher](https://github.com/agonisingbasher)
-* **YouTube:** [@AgonisingBasher](https://www.youtube.com/@AgonisingBasher)
-* **LinkedIn:** [Felipe Alexandre](https://www.linkedin.com/in/felipe-alexandre-7763b41a6/)
-
----
+Desenvolvido por **Felipe Alexandre**.
