@@ -261,3 +261,21 @@ h2 { margin: 10px 0 0; font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 600;
 .techstore-art-name span { color:#fb923c; }
 .techstore-art-caption { color:#ffcfaa; font:600 .72rem var(--mono); letter-spacing:.25em; }
 @media(max-width:600px) { .techstore-art { min-height:210px; } }
+
+
+/* Project category navigation */
+.project-filter-bar[hidden],.project-grid .project-card[hidden]{display:none!important}
+.project-filter-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:-8px 0 27px;padding:0 0 18px;border-bottom:1px solid var(--line)}
+.project-filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.project-filter{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:43px;padding:9px 13px;border:1px solid var(--line);border-radius:5px;background:#fbfdfd;color:var(--ink);font:600 .83rem/1.3 var(--sans);cursor:pointer;transition:background .18s,color .18s,border-color .18s;white-space:nowrap}
+.project-filter svg{flex:none;color:var(--green)}
+.project-filter:hover{border-color:var(--green);background:#e7f4f7}
+.project-filter[aria-pressed="true"]{background:#17212a;border-color:#17212a;color:#f8fbfc}
+.project-filter[aria-pressed="true"] svg{color:var(--cyan)}
+.filter-count{font:500 .68rem/1.3 var(--mono);min-width:20px;text-align:center;padding:3px 5px;border-radius:3px;background:#e4edef;color:#51626b}
+.project-filter[aria-pressed="true"] .filter-count{background:#31424b;color:var(--cyan)}
+.project-filter:focus-visible{outline:3px solid #28bce5;outline-offset:3px}
+.project-filter-summary{flex:none;margin:0;color:var(--muted);font:500 .75rem/1.5 var(--mono)}
+@media(max-width:760px){.project-filter-bar{flex-direction:column;align-items:flex-start;gap:12px;margin:0 0 20px;padding-bottom:14px}.project-filters{width:100%;gap:7px}.project-filter{flex:1 1 calc(50% - 7px);justify-content:flex-start;padding:10px;min-width:0}.filter-count{margin-left:auto}}
+@media(max-width:350px){.project-filter{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.project-filter{transition:none}}

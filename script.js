@@ -218,6 +218,10 @@ Object.assign(translations["pt-BR"], {"originalGame":"PROJETO AUTORAL","gameDeve
 Object.assign(translations["en"], {"originalGame":"ORIGINAL GAME","gameDevelopment":"IN DEVELOPMENT","marketDescription":"Cozy 2D village trading simulator with seasonal economy and business expansion.","cityDescription":"Brazilian 3D city builder with coastal development and municipal management."});
 Object.assign(translations["es"], {"originalGame":"JUEGO ORIGINAL","gameDevelopment":"EN DESARROLLO","marketDescription":"Simulador de comercio 2D en una aldea acogedora, con economía estacional y expansión comercial.","cityDescription":"Simulador urbano 3D brasileño con desarrollo costero y gestión municipal."});
 Object.assign(translations["fr"], {"originalGame":"JEU ORIGINAL","gameDevelopment":"EN DÉVELOPPEMENT","marketDescription":"Simulateur de commerce 2D dans un village chaleureux, avec économie saisonnière et expansion commerciale.","cityDescription":"Simulateur urbain brésilien en 3D avec aménagement du littoral et gestion municipale."});
+Object.assign(translations["pt-BR"], {"filterAll":"Todos","filterPorts":"Ports","filterStores":"Lojas","filterOriginal":"Jogos autorais","filterLabel":"Filtrar projetos por categoria","filterPlural":"{count} projetos","filterSingular":"{count} projeto"});
+Object.assign(translations["en"], {"filterAll":"All","filterPorts":"Ports","filterStores":"Stores","filterOriginal":"Original games","filterLabel":"Filter projects by category","filterPlural":"{count} projects","filterSingular":"{count} project"});
+Object.assign(translations["es"], {"filterAll":"Todos","filterPorts":"Ports","filterStores":"Tiendas","filterOriginal":"Juegos originales","filterLabel":"Filtrar proyectos por categoría","filterPlural":"{count} proyectos","filterSingular":"{count} proyecto"});
+Object.assign(translations["fr"], {"filterAll":"Tous","filterPorts":"Portages","filterStores":"Boutiques","filterOriginal":"Jeux originaux","filterLabel":"Filtrer les projets par catégorie","filterPlural":"{count} projets","filterSingular":"{count} projet"});
 const LANGUAGES = ["pt-BR", "en", "es", "fr"];
 const languageButtons = document.querySelectorAll("[data-lang-option]");
 const languageMeta = document.querySelector('meta[name="description"]');
@@ -301,3 +305,32 @@ function readStoredLanguage() {
 
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 setLanguage(LANGUAGES.includes(requestedLanguage) ? requestedLanguage : readStoredLanguage() || detectLanguage());
+
+
+// Portfolio category filters. The cards remain visible if JavaScript is disabled.
+(function initProjectFilters(){
+  const bar=document.getElementById("project-filters");
+  if(!bar)return;
+  const grid=document.getElementById("project-grid");
+  const cards=Array.from(grid.querySelectorAll("[data-project-category]"));
+  const buttons=Array.from(bar.querySelectorAll("[data-project-filter]"));
+  const summary=document.getElementById("project-filter-summary");
+  const categories=buttons.map(b=>b.dataset.projectFilter);
+  const readFilter=()=>{const f=new URLSearchParams(location.search).get("filter");return categories.includes(f)?f:"all";};
+  let selected=readFilter();
+  function render(){
+    let count=0;
+    cards.forEach(card=>{const show=selected==="all"||card.dataset.projectCategory===selected;card.hidden=!show;if(show)count++;});
+    buttons.forEach(button=>{const category=button.dataset.projectFilter;button.setAttribute("aria-pressed",String(category===selected));button.querySelector(".filter-count").textContent=cards.filter(card=>category==="all"||card.dataset.projectCategory===category).length;});
+    const t=translations[document.documentElement.lang]||translations["pt-BR"];
+    summary.textContent=t[count===1?"filterSingular":"filterPlural"].replace("{count}",String(count));
+  }
+  buttons.forEach(button=>button.addEventListener("click",()=>{
+    selected=button.dataset.projectFilter;
+    const url=new URL(location.href);if(selected==="all")url.searchParams.delete("filter");else url.searchParams.set("filter",selected);
+    history.replaceState(null,"",url);render();
+  }));
+  document.addEventListener("site-language-change",render);
+  window.addEventListener("popstate",()=>{selected=readFilter();render();});
+  bar.hidden=false;render();
+})();
