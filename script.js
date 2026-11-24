@@ -214,6 +214,10 @@ Object.assign(translations.fr, {
   techstoreLink: "Explorer TechStore"
 });
 
+Object.assign(translations["pt-BR"], {"originalGame":"PROJETO AUTORAL","gameDevelopment":"EM DESENVOLVIMENTO","marketDescription":"Simulador de comércio 2D em um vilarejo acolhedor, com economia sazonal e expansão de negócios.","cityDescription":"Simulador urbano 3D com identidade brasileira, urbanização litorânea e gestão municipal."});
+Object.assign(translations["en"], {"originalGame":"ORIGINAL GAME","gameDevelopment":"IN DEVELOPMENT","marketDescription":"Cozy 2D village trading simulator with seasonal economy and business expansion.","cityDescription":"Brazilian 3D city builder with coastal development and municipal management."});
+Object.assign(translations["es"], {"originalGame":"JUEGO ORIGINAL","gameDevelopment":"EN DESARROLLO","marketDescription":"Simulador de comercio 2D en una aldea acogedora, con economía estacional y expansión comercial.","cityDescription":"Simulador urbano 3D brasileño con desarrollo costero y gestión municipal."});
+Object.assign(translations["fr"], {"originalGame":"JEU ORIGINAL","gameDevelopment":"EN DÉVELOPPEMENT","marketDescription":"Simulateur de commerce 2D dans un village chaleureux, avec économie saisonnière et expansion commerciale.","cityDescription":"Simulateur urbain brésilien en 3D avec aménagement du littoral et gestion municipale."});
 const LANGUAGES = ["pt-BR", "en", "es", "fr"];
 const languageButtons = document.querySelectorAll("[data-lang-option]");
 const languageMeta = document.querySelector('meta[name="description"]');
